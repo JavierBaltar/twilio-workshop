@@ -10,7 +10,7 @@
 To trigger a Twilio API call, you need to configure the following items
 
 - Twilio account details, where Account SID and AUTH TOKEN are listed
-![](twilio-account-details.png)
+> ![](twilio-account-details.png)
 
 - Twilio verified called IDs, which contains the allowed destination numbers
 ![](twilio-verified-caller-ids.png)
