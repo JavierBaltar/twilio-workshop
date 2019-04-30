@@ -15,10 +15,10 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 ```pip install twilio```
 
 - Twilio account details
-![](awx-api.png)
+![](twilio-account-details.png)
 
 - Geo Restrictions
-![](twilio-verified-call-ids.png)
+![](twilio-verified-caller-ids.png)
 ![](twilio-voice-geo-permissions.png)
 
 
