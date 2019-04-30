@@ -1,18 +1,14 @@
 # twilio-workshop
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
-  <a href="#Tower-CLI">Tower CLI</a> •
-  <a href="#API">API</a> •
-  <a href="#Notifications">Notifications</a> •
-  <a href="#Docker-Security">Docker Security</a> •
+  <a href="#Code">Code</a> •
   <a href="#related">Related</a> •
   <a href="#Authors">Authors</a>
 </p>
 
 ## Getting Started
 To run an Ansible Playbook with AWX, you need to configure the following items
-- Credentials: User name/password or ssh key to connect to remote component
-```pip install twilio```
+
 
 - Twilio account details
 ![](twilio-account-details.png)
@@ -29,8 +25,6 @@ To run an Ansible Playbook with AWX, you need to configure the following items
     <Say voice="woman" language="es-ES">Esta es una llamada de prueba!</Say>
 </Response>
 ```
-
-
 
 ## Code
 
@@ -56,8 +50,6 @@ print('Call triggered successfully')
 #Print call sid and status
 print(call.sid, call.status)
 ```
-  
-![](awx-api.png)
 
 ## Related
 * [Twilio Programmable Voice Docs](https://www.twilio.com/docs/voice) - Twilio API documentation
