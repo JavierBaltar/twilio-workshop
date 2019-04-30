@@ -12,10 +12,7 @@
 ## Getting Started
 To run an Ansible Playbook with AWX, you need to configure the following items
 - Credentials: User name/password or ssh key to connect to remote component
-- Project: It contains the Ansible playbook, config, roles, templates etc
-- Inventories : What servers the playbook will run against and connection specific configuration
-- Templates: Job template to associate all of the above and run the playbook
-- Launch Templates: Launching current project
+```pip install twilio```
 
 ## Tower CLI
 Tower-cli is a command line tool for Ansible AWX. It can also be used as a client library for other python apps, or as a reference for others developing API interactions with Tower’s REST API.
