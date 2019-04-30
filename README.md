@@ -13,16 +13,18 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 - Twilio account details
 ![](twilio-account-details.png)
 
-- Geo Restrictions
+- Twilio verified called IDs
 ![](twilio-verified-caller-ids.png)
+
+- Geo Restrictions
 ![](twilio-voice-geo-permissions.png)
 
 
-- Announcement
+- Announcement The <Say> verb converts text to speech that is read back to the caller.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say voice="woman" language="es-ES">Esta es una llamada de prueba!</Say>
+    <Say voice="alice" language="es-ES">Esta es una llamada de prueba!</Say>
 </Response>
 ```
 
