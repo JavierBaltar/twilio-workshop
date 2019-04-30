@@ -7,19 +7,18 @@
 </p>
 
 ## Getting Started
-To run a Twilio API call, you need to configure the following items
+To trigger a Twilio API call, you need to configure the following items
 
-- Twilio account details
+- Twilio account details, where Account SID and AUTH TOKEN are listed
 ![](twilio-account-details.png)
 
-- Twilio verified called IDs
+- Twilio verified called IDs, which contains the allowed destination numbers
 ![](twilio-verified-caller-ids.png)
 
-- Geo Restrictions
+- Geo Restrictions in order to ensure your destination number is not restricted
 ![](twilio-voice-geo-permissions.png)
 
-
-- Announcement The ```say``` verb converts text to speech that is read back to the caller.
+- Announcement, the ```say``` verb converts text to speech that is read back to the caller.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
