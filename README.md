@@ -7,8 +7,7 @@
 </p>
 
 ## Getting Started
-To run an Ansible Playbook with AWX, you need to configure the following items
-
+To run a Twilio API call, you need to configure the following items
 
 - Twilio account details
 ![](twilio-account-details.png)
@@ -20,7 +19,7 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 ![](twilio-voice-geo-permissions.png)
 
 
-- Announcement The <Say> verb converts text to speech that is read back to the caller.
+- Announcement The ```say``` verb converts text to speech that is read back to the caller.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
