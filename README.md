@@ -13,10 +13,10 @@ To trigger a Twilio API call, you need to configure the following items
 > ![](twilio-account-details.png)
 
 - Twilio verified called IDs, which contains the allowed destination numbers
-![](twilio-verified-caller-ids.png)
+> ![](twilio-verified-caller-ids.png)
 
 - Geo Restrictions in order to ensure your destination number is not restricted
-![](twilio-voice-geo-permissions.png)
+> ![](twilio-voice-geo-permissions.png)
 
 - Announcement, the ```say``` verb converts text to speech that is read back to the caller.
 ```xml
