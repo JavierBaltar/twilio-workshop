@@ -18,7 +18,8 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 ![](awx-api.png)
 
 - Geo Restrictions
-![](awx-api.png)
+![](twilio-verified-call-ids.png)
+![](twilio-voice-geo-permissions.png)
 
 
 - Announcement
