@@ -24,12 +24,30 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 
 
 
-## API
-This section offers a basic understanding of the REST API used by AWX and Ansible Tower
-REST APIs provide access to resources (data entities) via URI paths. 
-- https://docs.ansible.com/ansible-tower/2.3.0/html/towerapi/intro.html
+## Code
 
-You can visit the AWX REST API in a web browser at http://<AWX Server IP>/api/ as shown below:
+```python
+from twilio.rest import Client
+
+#Set From and To numbers variables
+From_Number = "+16692015XXX"
+To_Number = "+34XXXXXXXXX"
+
+#Set announcement xml resource
+Src_Path = "http://demo.twilio.com/docs/voice.xml"
+
+#Set Account SID, AUTH TOKEN parameters
+account_sid = 'ACXXXXXXXXXXXXXX'
+auth_token = 'your_auth_token'
+client = Client("account_sid","auth_token")
+
+#Call triggering
+call = client.calls.create(to=To_Number, from_=From_Number, url = Src_Path, method = 'GET')
+print('Call triggered successfully')
+
+#Print call sid and status
+print(call.sid, call.status)
+```
   
 ![](awx-api.png)
 
@@ -52,34 +70,7 @@ Create a new AWX user
 curl -H "Content-type: application/json" -d "$(jo username=jbaltar first_name=Javier last_name=Baltar email=jbaltar@mydomain.com password=dontshareit)" -u $CREDENTIAL http://AWX-IP/api/v2/users/
 ```
 
-## Notifications
-AWX notifications provide a mechanism of signaling when AWX jobs succeed or fail. This can take the form of sending a message to a Slack channel, an email or sending an HTTP POST to another service to trigger other actions.
-In AWX the following notification types are supported:
-- Email
-- Slack
-- Hipchat
-- Pagerduty
-- Twilio
-- IRC
-- Webhook (POST)
 
-![](awx-notifications.png)
-
-## Docker Security
-Docker offers the Docker Bench for Security script (https://github.com/docker/docker-bench-security) , which checks a Docker configuration against the published hardening guide: CIS DOCKER 1.12.0 BENCHMARK V1.0.0 
-You can just download the script and run it straight from your host. Once you have run the script, you will be presented the output shown below
-
-![](dockerSecurity.gif)
-
-
-The script results in Info, Warning, and Pass notes for each of the recommendations which are grouped into 5 sections:
-Host Configuration
-Docker Daemon Configuration
-Docker Daemon Configuration Files
-Container Images and Build Files
-Container Runtime
-
-Once the reported is generated, you can follow the mentioned benchmark document to remediate them.
 
 
 ## Related
