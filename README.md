@@ -14,6 +14,13 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 - Credentials: User name/password or ssh key to connect to remote component
 ```pip install twilio```
 
+- Twilio account details
+![](awx-api.png)
+
+- Geo Restrictions
+![](awx-api.png)
+
+
 - Announcement
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
