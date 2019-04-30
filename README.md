@@ -14,32 +14,15 @@ To run an Ansible Playbook with AWX, you need to configure the following items
 - Credentials: User name/password or ssh key to connect to remote component
 ```pip install twilio```
 
-## Tower CLI
-Tower-cli is a command line tool for Ansible AWX. It can also be used as a client library for other python apps, or as a reference for others developing API interactions with Tower’s REST API.
-- https://docs.ansible.com/ansible-tower/latest/html/towerapi/tower_cli.html 
+- Announcement
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="woman" language="fr-FR">Chapeau!</Say>
+</Response>
+```
 
-#### List users
-`tower-cli user list`
-#### Create a new user
-`tower-cli user create --username=javierbaltar --first-name=Javier --last-name=Baltar --email=javierbaltar@mydomain.com`
 
-#### Launch a job
-`tower-cli job launch — job-template=id`
-
-#### Monitor a job
-`tower-cli job monitor id`
-
-#### Export all objects 
-`tower-cli receive — all`
-
-#### Export all objects and save to a file in json format
-`tower-cli receive — all — format json > awx.json`
-
-#### Import from a JSON file named awx.json 
-`tower-cli send assets.json`
-
-#### Copy all assets from one instance to another
-`tower-cli receive — tower-host awx.lab.com — all | tower-cli send — tower-host awx.production.com`
 
 ## API
 This section offers a basic understanding of the REST API used by AWX and Ansible Tower
